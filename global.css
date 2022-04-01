@@ -1,0 +1,26 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: #ebeef5;
+}
+
+nav {
+    background-color: #f7f6ff;
+    font-size: 16px;
+}
+
+footer * {
+    font-size: 11px;
+}
