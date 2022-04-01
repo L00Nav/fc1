@@ -13,6 +13,10 @@ nav:hover {
     width: 206px;
 }
 
+nav:hover > img {
+    fill: #02577a;
+}
+
 .logoImg {
     display: inline-block;
     position: relative;
@@ -62,16 +66,10 @@ nav:hover {
 
 footer {
     color: #02577a;
-    position: fixed;
-    left: 50%;
+    position: absolute;
     bottom: 10px;
-    padding-top: 5px;
-}
-
-.footerLine {
-    position: relative;
-    right: 45%;
-    width: 180%;
-    margin-bottom: 5px;
+    padding: 5px 86px 0px 86px;
     border-top: 1px solid #02577a;
+    left: 50%;
+    transform: translateX(-50%);
 }
