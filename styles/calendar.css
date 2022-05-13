@@ -1,0 +1,207 @@
+
+.content {
+    overflow: hidden;
+}
+
+.top-row {
+    margin-top: 60px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+.contentBox {
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Tasks*/
+
+.taskList {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.taskList > .contentBox {
+    padding: 20px 40px;
+    justify-content: space-between;
+}
+
+.taskContainer {
+    width: 40%;
+}
+
+.taskTitle {
+    font-weight: bold;
+}
+
+.taskDescription {
+    margin-top: 8px;
+    color: var(--inactiveGrey);
+    font-size: 20px;
+}
+
+.prioLine {
+    height: 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0 0;
+}
+
+.prioRed {
+    background-color: #fc0000;
+}
+
+.prioYellow {
+    background-color: #FCE300;
+}
+
+.prioGreen {
+    background-color: #51FC00;
+}
+
+.taskMenu {
+    align-self: flex-start;
+    text-align: end;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.taskMenu * {
+    cursor: pointer;
+}
+
+.taskMenu:hover {
+    height: 100%;
+    width: 50%;
+}
+
+.taskMenu > h2 {
+    font-size: 24px;
+    margin-left: 16px;
+}
+
+.taskOptions > p {
+    margin-top: 5px;
+}
+
+@media (max-width: 630px)
+{
+    .prioLine {
+        height: 16px;
+    }
+
+    .taskList > .contentBox {
+        padding: 10px 20px;
+    }
+
+}
+
+/*Calendar*/
+
+.calContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.monthSelector {
+    display: flex;
+    justify-content: row;
+    margin: 20px;
+}
+
+.calMonth {
+    font-weight: 700;
+}
+
+.calArrow {
+    margin: 6px 16px;
+    cursor: pointer;
+}
+
+.weekDay {
+    padding-bottom: 20px;
+}
+
+.calLine {
+    border: 1px solid #C4C4C4;;
+}
+
+.calRow {
+    height: 62px;
+}
+
+.calDay {
+    font-weight: 700;
+}
+
+.calendar {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px;
+    table-layout: fixed;
+    max-width: 480px;
+    width: 84%;
+}
+
+.weekDay, .calDay {
+    text-align: center;
+    font-size: 24px;
+    max-width: 40px;
+    max-height: 40px;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+}
+
+.weekDay, .inactiveDay {
+    color: var(--inactiveGrey);
+}
+
+.currentDay {
+    background-color: var(--mainGreenishBlue);
+    border-radius: 40px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+@media (max-width: 630px)
+{
+    .calRow {
+        height: 48px;
+    }
+
+    .calendar {
+        width: 95%;
+        margin: 20px 10px;
+    }
+
+    .weekDay, .calDay {
+        font-size: 20px;
+    }
+
+    .weekDay {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .calRow {
+        height: 30px;
+    }
+
+    .weekDay, .calDay {
+        font-size: 16px;
+    }
+}

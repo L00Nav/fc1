@@ -5,29 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - BIT</title>
-    <link rel="stylesheet" href="./global.css">
-    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/template.css">
+    <link rel="stylesheet" href="./styles/home.css">
 </head>
 <body>
     <!--The side bar-->
     <nav>
-        <img class="logoImg" src="./assets/logo.svg" alt="BIT">
+        <img class="logoImg" src="../../assets/img/logo.svg" alt="BIT">
         <div class="navLine"></div>
         <div class="navElement currentLocation">
-            <img class="navIcon" src="./assets/Vector1.svg" alt="Home">
-            <a class="navTag" href="#">Home</a>
+            <a class="navTag" href="#">
+                <!--<img class="navIcon" src="../../assets/Vector1.svg" alt="Home">-->
+                <div class="navIcon homeIcon"></div>
+                Home
+            </a>
         </div>
         <div class="navElement">
-            <img class="navIcon" src="./assets/Vector2.svg" alt="Home">
-            <a class="navTag" href="#">Calendar</a>
+            <a class="navTag" href="./pages/calendar/index.html">
+                <!--<img class="navIcon calIcon" src="../../assets/Vector2.svg" alt="Home">-->
+                <div class="navIcon calIcon"></div>
+                Calendar
+            </a>
         </div>
         <div class="navElement">
-            <img class="navIcon" src="./assets/Vector3.svg" alt="Home">
-            <a class="navTag" href="#">FE</a>
+            <a class="navTag" href="#">
+                <!--<img class="navIcon feIcon" src="../../assets/Vector3.svg" alt="Home">-->
+                <div class="navIcon feIcon"></div>
+                FE
+            </a>
         </div>
         <div class="navElement">
-            <img class="navIcon" src="./assets/Vector4.svg" alt="Home">
-            <a class="navTag" href="#">Games</a>
+            <a class="navTag" href="#">
+                <!--<img class="navIcon gameIcon" src="../../assets/Vector4.svg" alt="Home">-->
+                <div class="navIcon gameIcon"></div>
+                Games
+            </a>
         </div>
     </nav>
     <main class="content">
@@ -44,7 +57,7 @@
             </div>
         </header>
         <!--Main image-->
-        <img class="morning-table main-content" src="./assets/morning-table.png">
+        <img class="morning-table main-content" src="./assets/img/morning-table.png">
         <!--The quote-->
         <div class="quote-box main-content">
             <p class="quote">"First, solve the problem. Then, write the code." - John Johnson</p>

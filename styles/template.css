@@ -1,0 +1,123 @@
+.content {
+    margin-left: 100px;
+    width: calc(100vw - 100px);
+    max-width: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/*Nav bar*/
+
+nav {
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    transition: all 0.1s ease-in-out;
+    overflow: hidden;
+}
+
+nav * {
+    text-decoration: none;
+}
+
+nav:hover {
+    width: 206px;
+}
+
+.logoImg {
+    display: block;
+    position: relative;
+    margin-top: 52px;
+    margin-left: calc(50% - 34px);
+}
+
+.navLine {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 24px;
+    margin-bottom: 31px;
+    border: 2px solid #C4C4C4;
+}
+
+.navElement {
+    height: 57px;
+    margin-top: 2px;
+    margin-left: 11px;
+}
+
+.currentLocation {
+    background-color: #fff;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.navTag {
+    margin-top: 18px;
+    margin-bottom: 16px;
+    color: #c4c4c4;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.navIcon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 16px 32px;
+    flex-shrink: 0;
+    background-color: var(--inactiveGrey);
+    transition: ease-in 0.1s;
+}
+
+.currentLocation .navIcon {
+    background-color: var(--mainGreenishBlue);
+}
+
+.homeIcon {
+    mask: url(../assets/img/Vector1.svg);
+}
+
+.calIcon {
+    mask: url(../assets/img/Vector2.svg);
+}
+
+.feIcon {
+    mask: url(../assets/img/Vector3.svg);
+}
+
+.gameIcon {
+    margin: 16px 24px;
+    width: 41px;
+    height: 25px;
+    mask: url(../assets/img/Vector4.svg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.navElement:hover > .navTag {
+    color:var(--mainGreenishBlue);
+}
+
+.navElement:hover .navIcon {
+    background-color: var(--mainGreenishBlue);
+}
+
+
+/*Footer*/
+
+footer {
+    color:var(--mainGreenishBlue);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 80px 0px 80px;
+    border-top: 1px solid #02577a;
+    margin-left: calc(50% - 50px);
+    transform: translateX(-50%);
+    flex-basis: 30px;
+    margin-top: auto;
+    width: 346px;
+}
